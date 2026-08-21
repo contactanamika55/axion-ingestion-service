@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: devopsinsiders/axion-ingestion-service
+  DOCKER_IMAGE: Asing76/axion-ingestion-service
 
 jobs:
   build-and-push:
