@@ -74,21 +74,4 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: axion-db-secrets
-                  key: DATABASE_URL
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: axion-ingestion-service
-  namespace: default
-  labels:
-    app.kubernetes.io/name: axion-ingestion-service
-spec:
-  type: ClusterIP
-  selector:
-    app: axion-ingestion-service
-  ports:
-    - name: http
-      port: 80
-      targetPort: 8000
-      protocol: TCP
+                  key: "postgresql://admin:admin%40s123@10.244.1.4:5432/mydb"
