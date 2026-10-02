@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: ingestion-service
-          image: ghcr.io/contactanamika55/axion-ingestion-service:2dd78b2
+          image: ghcr.io/contactanamika55/axion-ingestion-service:a7c0cf0
           imagePullPolicy: IfNotPresent
 
           ports:
