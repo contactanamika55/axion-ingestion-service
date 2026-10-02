@@ -1,3 +1,4 @@
+##
 """
 Axion Ingestion Service - Configuration
 Loads database connection string from environment variable.
@@ -14,7 +15,7 @@ class Settings:
     # Example: postgresql://postgres:postgres@localhost:5432/axiondb
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL",
-        "postgresql://admin:admin%40s123@10.244.1.4:5432/mydb",
+        "postgresql://admin:admin%40s1234@10.244.1.4:5432/mydb",
     )
 
 settings = Settings()
